@@ -3,7 +3,7 @@ body
 	background: url(img/cork-board.png);
 	color: #000;
     font-family: 'Courier Prime', monospace;
-    font-size: 18px;
+    font-size: 21px;
 }
 
 .navbar
@@ -26,6 +26,7 @@ h1
 {
 	background-color: #fff !important;
 	font-family: 'Pacifico', cursive;
+
 }
 
 .websideTopPct
@@ -40,4 +41,9 @@ h1
 	{
 		display:none !important;
 	}
+}
+
+.accountIntroduction
+{
+	background-color: #6EDFE5 !important;
 }
