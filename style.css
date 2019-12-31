@@ -18,5 +18,26 @@ body
 
 h1
 {
-	font-size: 30px;
+	font-size: 32px;
+	margin-top: 15px;
+}
+
+.websideTopTxt
+{
+	background-color: #fff !important;
+	font-family: 'Pacifico', cursive;
+}
+
+.websideTopPct
+{
+	background-color: #fff !important;
+}
+
+
+@media screen and (max-width: 991px)
+{
+	.websideTopPct
+	{
+		display:none !important;
+	}
 }
