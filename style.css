@@ -9,6 +9,7 @@ body
 .navbar
 {
 	min-height: 57px;
+	align: justify;
 }
 
 .bg-openMenu
@@ -26,6 +27,7 @@ h1
 {
 	background-color: #fff !important;
 	font-family: 'Pacifico', cursive;
+	min-height: 70px;
 
 }
 
@@ -48,10 +50,7 @@ h1
 	background-color: #8D908D !important;
 }
 
-.accountIntroduction:hover
-{
-	transform: scale(1.05);
-}
+
 
 .contactInvitation
 {
@@ -61,4 +60,9 @@ h1
 .contactInvitation:hover
 {
 	color: #ddd;
+}
+
+button:hover
+{
+	transform: scale(1.05);
 }
