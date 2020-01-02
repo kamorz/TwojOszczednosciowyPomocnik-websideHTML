@@ -56,7 +56,7 @@
 				
 						<ul class="navbar-nav mr-auto">
 						
-							<li class="nav-item dropdown ml-2">
+							<li class="nav-item dropdown ml-1">
 								<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="submenu1" aria-haspopup="true"><i class="icon-plus"></i>Dodaj operację</a>
 								
 								<div class="dropdown-menu" aria-labelledby="submenu1">
@@ -70,7 +70,7 @@
 							
 							
 							
-							<li class="nav-item dropdown ml-2">
+							<li class="nav-item dropdown ml-1">
 								<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="submenu2" aria-haspopup="false"><i class="icon-eye"></i>Przegląd</a>
 								
 								<div class="dropdown-menu" aria-labelledby="submenu2">
@@ -83,7 +83,7 @@
 						
 							</li>
 							
-							<li class="nav-item  ml-2">
+							<li class="nav-item  ml-1">
 								<a class="nav-link" href="Settings.html"> Ustawienia<i class="icon-cog"></i></a>
 							</li>
 						
@@ -99,52 +99,53 @@
 			<div class="row">
 				<div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center mb-5 mr-0 bg-white loginForm">
 					
-				<h1 class="h2">DODAWANIE WYDATKÓW </h1>
+				<h1 class="h2 mb-3">DODAWANIE WYDATKÓW </h1>
 					
 					<form>
 							
-						<div class="input-group mb-3 justify-content-center">
-							<input type="text" id="registrationEmail" placeholder="Podaj swój email" aria-label="Login użytkownika">
-								
-							<div class="input-group-append">
-							<span class="input-group-text"><i class="icon-mail"></i></span>
-							</div>
-						</div>
-
-						<div class="input-group mb-4 justify-content-center">
-							<input type="text" id="registrationName" placeholder="Podaj swoje imię" aria-label="Imię użytkownika">
-								
-							<div class="input-group-append">
-							<span class="input-group-text"><i class="icon-user"></i></span>
-							</div>
-						</div>
-						
-						<div class="input-group mb-3 justify-content-center">
-							<input type="password" id="registrationPassword" placeholder="Podaj swoje hasło" aria-label="Hasło użytkownika">
-								
-							<div class="input-group-append">
-							<span class="input-group-text"><i class="icon-lock"></i></span>
-							</div>
-						</div>
-						
-						<div class="input-group mb-3 justify-content-center">
-							<input type="password" id="registrationConfirmedPassword" placeholder="Powtórz hasło" aria-label="Hasło użytkownika powtórzone">
-								
-							<div class="input-group-append">
-							<span class="input-group-text"><i class="icon-lock"></i></span>
-							</div>
+						<div class="form-group col-6 offset-3">
+							<label for="expenseType">Rodzaj wydatku</label>
+							<select class="form-control" id="expenseType" >
+								 <option>Jedzenie</option>
+								 <option>Mieszkanie</option>
+								 <option>Transport</option>
+								 <option>Opieka zdrowotna</option>
+								 <option>Ubranie</option>
+								 <option>Książki/filmy</option>
+								 <option>Wycieczka</option>
+								 <option>Higiena</option>
+								 <option>Dzieci</option>
+								 <option>Spłata długów</option>
+								 <option>Oszczędności</option>
+								 <option>Inne wydatki</option>
+							</select>
 						</div>
 							
-						<button type="submit" class="btn mb-2 accountIntroduction">ZAŁÓŻ KONTO</button>
+						<div class="form-group col-6 offset-3">
+							<label for="amount">Kwota (zł)</label>
+							<input type="number" class="form-control" id="amount" step="0.01" required>
+						</div>	
+						
+						<div class="form-group col-6 offset-3">
+							<label for="expenseDate">Data</label>
+							<input type="date" class="form-control" id="expenseDate" required>
+							
+						</div>
+						
+						<div class="form-group col-6 offset-3">
+							<label for="extraDescription">Dodatkowy opis</label>
+							<textarea class="form-control" id="extraDescription" rows="2" placeholder="Pole opcjonalne"></textarea>
+						</div>
+						
+						<button type="submit" class="btn mb-2 accountIntroduction">ZATWIERDŹ</button>
+
 							
 					</form>
 					
 				</div>
 			</div>
 				
-			<div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center mt-1 mb-2">
-					<a href="Author.html" target="_blank" class="btn btn-secondary btn-sm" role="button" aria-pressed="true"><i class="icon-user"></i> Więcej o autorze strony</a>
-			</div>
+			
 				
 	</main>
 	
