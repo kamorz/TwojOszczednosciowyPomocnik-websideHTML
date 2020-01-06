@@ -9,7 +9,6 @@ body
 .navbar
 {
 	min-height: 57px;
-	align: justify;
 	margin-right: 0 !important;
 }
 
@@ -44,6 +43,11 @@ h1
 	{
 		display:none !important;
 	}
+}
+
+ul
+{
+	list-style-type:none;
 }
 
 .accountIntroduction
