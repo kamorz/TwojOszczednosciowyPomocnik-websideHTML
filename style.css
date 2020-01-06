@@ -71,3 +71,17 @@ button:hover
 {
 	transform: scale(1.05);
 }
+
+.settings
+{
+	background-color: #555555 !important;
+	visibility: visible;
+}
+
+.settingsNV
+{
+	background-color: #555555 !important;
+	display:none;
+}
+
+
