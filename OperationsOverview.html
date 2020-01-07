@@ -75,9 +75,9 @@
 								
 								<div class="dropdown-menu" aria-labelledby="submenu2">
 								
-									<a class="dropdown-item" href="OperationsOverwiev.html"> Bilans obecnego miesiąca </a>
-									<a class="dropdown-item" href="OperationsOverwiev.html"> Bilans poprzedniego miesiąca </a>
-									<a class="dropdown-item" href="SelectedPeriodOperationsOverwiev.html"> Bilans wybranego okresu </a>
+									<a class="dropdown-item" href="OperationsOverview.html#currentMonth-tab"> Bilans obecnego miesiąca </a>
+									<a class="dropdown-item" href="OperationsOverview.html#previousMonth-tab"> Bilans poprzedniego miesiąca </a>
+									<a class="dropdown-item" href="OperationsOverview.html#selectedPeriod-tab"> Bilans wybranego okresu </a>
 								
 								</div>
 						
@@ -105,13 +105,13 @@
 						<div class="card-header">
 							<ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
 								<li class="nav-item">
-									<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Obecny miesiąc</a>
+									<a class="nav-link active" id="currentMonth-tab" data-toggle="tab" href="#currentMonth" role="tab" aria-controls="currentMonth" aria-selected="true">Obecny miesiąc</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Poprzedni miesiąc</a>
+									<a class="nav-link" id="previousMonth-tab" data-toggle="tab" href="#previousMonth" role="tab" aria-controls="previousMonth" aria-selected="false">Poprzedni miesiąc</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Wybrany okres</a>
+									<a class="nav-link" id="selectedPeriod-tab" data-toggle="tab" href="#selectedPeriod" role="tab" aria-controls="selectedPeriod" aria-selected="false">Wybrany okres</a>
 								</li>
 							</ul>
 						</div>
@@ -119,12 +119,12 @@
 					  
 					<div class="card-body">
 						<div class="tab-content" id="myTabContent">
-							<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+							<div class="tab-pane fade show active" id="currentMonth" role="tabpanel" aria-labelledby="currentMonth-tab">
 								<div class="col-12 text-center mb-5 mt-lg-3 mr-0 bg-white">
 						
 									<div class="row">
 										
-										<div class="col-12 col-lg-5 offset-lg-1 text-center mb-5 mt-lg-3 mr-0 bg-white">
+										<div class="col-12 col-lg-6 offset-lg-0 text-center mb-5 mt-lg-3 mr-0 bg-white">
 										
 											<h1 class="h3">Przegląd wydatków</h1>
 											
@@ -136,6 +136,7 @@
 												  <th>Wydatek</th>
 												  <th>Kwota</th>
 												  <th>Opis</th>
+												  <th>#</th>
 												</tr>
 											  </thead>
 											  <tbody>
@@ -145,6 +146,7 @@
 												  <td>Jedzenie</td>
 												  <td>20,00</td>
 												  <td>Zakupy Biedronka</td>
+												  <td><i class="icon-trash"></i></td>
 												</tr>
 												<tr>
 												  <th scope="row">2</th>
@@ -152,6 +154,7 @@
 												  <td>Edukacja</td>
 												  <td>95,20</td>
 												  <td>Lekcja angielskiego</td>
+												  <td><i class="icon-trash"></i></td>
 												</tr>
 												<tr>
 												  <th scope="row">3</th>
@@ -159,13 +162,14 @@
 												  <td>Zwierzęta</td>
 												  <td>12,90</td>
 												  <td>Karma dla kota</td>
+												  <td><i class="icon-trash"></i></td>
 												</tr>
 											  </tbody>
 											</table>
 											
 										</div>
 										
-										<div class="col-12 col-lg-5 offset-lg-0 text-center mb-5 mt-lg-3 mr-0 bg-white">
+										<div class="col-12 col-lg-6 offset-lg-0 text-center mb-5 mt-lg-3 mr-0 bg-white">
 											
 											
 											<h1 class="h3">Przegląd przychodów</h1>
@@ -178,6 +182,7 @@
 												  <th>Wydatek</th>
 												  <th>Kwota</th>
 												  <th>Opis</th>
+												  <th>#</th>
 												</tr>
 											  </thead>
 											  <tbody>
@@ -187,6 +192,7 @@
 												  <td>Wypłata</td>
 												  <td>5200,00</td>
 												  <td></td>
+												  <td><i class="icon-trash"></i></td>
 												</tr>
 												<tr>
 												  <th scope="row">2</th>
@@ -194,6 +200,7 @@
 												  <td>Sprzedaż na Allegro</td>
 												  <td>90,00</td>
 												  <td>Sprzedaż nart</td>
+												  <td><i class="icon-trash"></i></td>
 												</tr>
 											  </tbody>
 											</table>
@@ -208,8 +215,24 @@
 							</div>
 						 
 
-							<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Treść karty #profile</div>
-							<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Treść karty #contact</div>
+							<div class="tab-pane fade" id="previousMonth" role="tabpanel" aria-labelledby="previousMonth-tab">
+							AAA
+							</div>
+							
+							<div class="tab-pane fade" id="selectedPeriod" role="tabpanel" aria-labelledby="selectedPeriod-tab">
+								<div class="row">
+								<div class="form-group col-8 offset-2 col-lg-5 offset-lg-1">
+								<label for="beginningDate">Data początkowa</label>
+								<input type="date" class="form-control" id="beginningDate" required>
+								</div>
+								
+								<div class="form-group col-8 offset-2 col-lg-5 offset-lg-0">
+								<label for="endingDate">Data końcowa</label>
+								<input type="date" class="form-control" id="endingDate" required>
+								</div>
+								</div>
+								
+							</div>
 						 
 						</div>
 						
