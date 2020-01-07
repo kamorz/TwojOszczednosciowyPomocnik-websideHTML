@@ -71,3 +71,15 @@ button:hover
 {
 	transform: scale(1.05);
 }
+
+.settingsV
+{
+	visibility: visible;
+}
+
+.settingsNV
+{
+	display:none;
+}
+
+
