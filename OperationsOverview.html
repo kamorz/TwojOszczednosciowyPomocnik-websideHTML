@@ -46,7 +46,7 @@
 			<div class="row">
 				<nav class="navbar navbar-dark bg-openMenu navbar-expand-lg col-12">
 				
-					<a class="navbar-brand" href="#"><i class="icon-dollar"></i> Strona główna </a>
+					<a class="navbar-brand" href="UserMainMenu.html"><i class="icon-dollar"></i> Strona główna </a>
 					
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
 					<span class="navbar-toggler-icon"></span>
@@ -119,7 +119,7 @@
 					  
 					<div class="card-body">
 						<div class="tab-content" id="myTabContent">
-							<div class="tab-pane fade show active" id="currentMonth" role="tabpanel" aria-labelledby="currentMonth-tab">
+							<div class="tab-pane fade show" id="currentMonth" role="tabpanel" aria-labelledby="currentMonth-tab">
 								<div class="col-12 text-center mb-5 mt-lg-3 mr-0 bg-white">
 						
 									<div class="row">
@@ -141,12 +141,16 @@
 											  </thead>
 											  <tbody>
 												<tr>
-												  <th scope="row">1</th>
-												  <td>01-01</td>
-												  <td>Jedzenie</td>
-												  <td>20,00</td>
-												  <td>Zakupy Biedronka</td>
-												  <td><i class="icon-trash"></i></td>
+													<th scope="row">1</th>
+													<td>01-01</td>
+													<td>Jedzenie</td>
+													<td>20,00</td>
+													<td>Zakupy Biedronka</td>
+													<td>
+														<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#deleteModal">
+														<i class="icon-trash"></i>
+														</button>
+													</td>
 												</tr>
 												<tr>
 												  <th scope="row">2</th>
@@ -154,7 +158,11 @@
 												  <td>Edukacja</td>
 												  <td>95,20</td>
 												  <td>Lekcja angielskiego</td>
-												  <td><i class="icon-trash"></i></td>
+												  <td>
+													<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#deleteModal">
+													<i class="icon-trash"></i>
+													</button>
+												  </td>
 												</tr>
 												<tr>
 												  <th scope="row">3</th>
@@ -162,7 +170,11 @@
 												  <td>Zwierzęta</td>
 												  <td>12,90</td>
 												  <td>Karma dla kota</td>
-												  <td><i class="icon-trash"></i></td>
+												  <td>
+													<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#deleteModal">
+													<i class="icon-trash"></i>
+													</button>
+												  </td>
 												</tr>
 											  </tbody>
 											</table>
@@ -192,7 +204,11 @@
 												  <td>Wypłata</td>
 												  <td>5200,00</td>
 												  <td></td>
-												  <td><i class="icon-trash"></i></td>
+												  <td>
+													<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#deleteModal">
+													<i class="icon-trash"></i>
+													</button>
+												  </td>
 												</tr>
 												<tr>
 												  <th scope="row">2</th>
@@ -200,13 +216,19 @@
 												  <td>Sprzedaż na Allegro</td>
 												  <td>90,00</td>
 												  <td>Sprzedaż nart</td>
-												  <td><i class="icon-trash"></i></td>
+												  <td>
+													<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#deleteModal">
+													<i class="icon-trash"></i>
+													</button>
+												  </td>
 												</tr>
 											  </tbody>
 											</table>
 											
 											
 										</div>
+										
+										
 								
 									</div>
 						
@@ -216,25 +238,161 @@
 						 
 
 							<div class="tab-pane fade" id="previousMonth" role="tabpanel" aria-labelledby="previousMonth-tab">
-							AAA
+								<div class="col-12 text-center mb-5 mt-lg-3 mr-0 bg-white">
+						
+									<div class="row">
+										
+										<div class="col-12 col-lg-6 offset-lg-0 text-center mb-5 mt-lg-3 mr-0 bg-white">
+										
+											<h1 class="h3">Przegląd wydatków</h1>
+											
+											<table class="table table-bordered">
+											  <thead>
+												<tr>
+												  <th>#</th>
+												  <th>Data</th>
+												  <th>Wydatek</th>
+												  <th>Kwota</th>
+												  <th>Opis</th>
+												  <th>#</th>
+												</tr>
+											  </thead>
+											  <tbody>
+												<tr>
+													<th scope="row">1</th>
+													<td>01-12</td>
+													<td>Jedzenie</td>
+													<td>20,00</td>
+													<td>Zakupy Lidl</td>
+													<td>
+														<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#deleteModal">
+														<i class="icon-trash"></i>
+														</button>
+													</td>
+												</tr>
+												<tr>
+												  <th scope="row">2</th>
+												  <td>03-12</td>
+												  <td>Edukacja</td>
+												  <td>90,00</td>
+												  <td>Lekcja tańca</td>
+												  <td>
+													<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#deleteModal">
+													<i class="icon-trash"></i>
+													</button>
+												  </td>
+												</tr>
+												<tr>
+												  <th scope="row">3</th>
+												  <td>07-12</td>
+												  <td>Dom</td>
+												  <td>12,90</td>
+												  <td>Wycieraczka</td>
+												  <td>
+													<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#deleteModal">
+													<i class="icon-trash"></i>
+													</button>
+												  </td>
+												</tr>
+											  </tbody>
+											</table>
+											
+										</div>
+										
+										<div class="col-12 col-lg-6 offset-lg-0 text-center mb-5 mt-lg-3 mr-0 bg-white">
+											
+											
+											<h1 class="h3">Przegląd przychodów</h1>
+											
+											<table class="table table-bordered">
+											  <thead>
+												<tr>
+												  <th>#</th>
+												  <th>Data</th>
+												  <th>Wydatek</th>
+												  <th>Kwota</th>
+												  <th>Opis</th>
+												  <th>#</th>
+												</tr>
+											  </thead>
+											  <tbody>
+												<tr>
+												  <th scope="row">1</th>
+												  <td>01-12</td>
+												  <td>Wypłata</td>
+												  <td>5000,00</td>
+												  <td></td>
+												  <td>
+													<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#deleteModal">
+													<i class="icon-trash"></i>
+													</button>
+												  </td>
+												</tr>
+												<tr>
+												  <th scope="row">2</th>
+												  <td>03-01</td>
+												  <td>Odsetki bankowe</td>
+												  <td>190,00</td>
+												  <td>Santander Bank</td>
+												  <td>
+													<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#deleteModal">
+													<i class="icon-trash"></i>
+													</button>
+												  </td>
+												</tr>
+											  </tbody>
+											</table>
+											
+											
+										</div>
+										
+										
+								
+									</div>
+						
+								</div>
 							</div>
 							
 							<div class="tab-pane fade" id="selectedPeriod" role="tabpanel" aria-labelledby="selectedPeriod-tab">
-								<div class="row">
-								<div class="form-group col-8 offset-2 col-lg-5 offset-lg-1">
-								<label for="beginningDate">Data początkowa</label>
-								<input type="date" class="form-control" id="beginningDate" required>
-								</div>
-								
-								<div class="form-group col-8 offset-2 col-lg-5 offset-lg-0">
-								<label for="endingDate">Data końcowa</label>
-								<input type="date" class="form-control" id="endingDate" required>
-								</div>
-								</div>
+								<form>
+									<div class="row">
+										<div class="form-group col-8 offset-2 col-lg-5 offset-lg-1">
+										<label for="beginningDate">Data początkowa</label>
+										<input type="date" class="form-control" id="beginningDate" required>
+										</div>
+										
+										<div class="form-group col-8 offset-2 col-lg-5 offset-lg-0">
+										<label for="endingDate">Data końcowa</label>
+										<input type="date" class="form-control" id="endingDate" required>
+										</div>
+									</div>
+									<button type="submit" class="btn mb-2 accountIntroduction">Wyszukaj</button>
+									
+								</form>
 								
 							</div>
+							
+							
 						 
 						</div>
+						
+						<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-body">
+									Czy usunąć tę pozycję?
+									</div>
+								<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Tak</button>
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Nie</button>
+								</div>
+							</div>
+						</div>
+						
+						
+						
+						</div>
+						
 						
 					</div>
 				</div>
