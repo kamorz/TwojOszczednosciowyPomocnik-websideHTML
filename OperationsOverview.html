@@ -348,11 +348,14 @@
 											  </tbody>
 											</table>
 											Suma przychodów: 1200,00zł
+										
+												
 											
+												
 											
 										</div>
 										
-										
+											
 								
 									</div>
 									
@@ -360,6 +363,9 @@
 						
 								</div>
 							</div>
+							
+							
+							
 							
 							<div class="tab-pane fade" id="selectedPeriod" role="tabpanel" aria-labelledby="selectedPeriod-tab">
 								<form>
@@ -378,28 +384,175 @@
 									
 								</form>
 								
+								
+								<div class="col-12 text-center mb-5 mt-lg-3 mr-0 bg-white">
+						
+									<div class="row">
+										
+										<div class="col-12 col-lg-6 offset-lg-0 text-center mb-5 mt-lg-3 mr-0 bg-white">
+										
+											<h1 class="h3">Przegląd wydatków</h1>
+											
+											<table class="table table-bordered">
+											  <thead>
+												<tr>
+												  <th>#</th>
+												  <th>Data</th>
+												  <th>Wydatek</th>
+												  <th>Kwota</th>
+												  <th>Opis</th>
+												  <th>#</th>
+												</tr>
+											  </thead>
+											  <tbody>
+												<tr>
+													<th scope="row">1</th>
+													<td>22-11</td>
+													<td>Higiena</td>
+													<td>10,00</td>
+													<td>Szampon do włosów</td>
+													<td>
+														<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#deleteModal">
+														<i class="icon-trash"></i>
+														</button>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row">2</th>
+													<td>01-12</td>
+													<td>Jedzenie</td>
+													<td>20,00</td>
+													<td>Zakupy Lidl</td>
+													<td>
+														<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#deleteModal">
+														<i class="icon-trash"></i>
+														</button>
+													</td>
+												</tr>
+												<tr>
+												  <th scope="row">3</th>
+												  <td>03-12</td>
+												  <td>Edukacja</td>
+												  <td>90,00</td>
+												  <td>Lekcja tańca</td>
+												  <td>
+													<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#deleteModal">
+													<i class="icon-trash"></i>
+													</button>
+												  </td>
+												</tr>
+												<tr>
+												  <th scope="row">4</th>
+												  <td>07-12</td>
+												  <td>Dom</td>
+												  <td>12,90</td>
+												  <td>Wycieraczka</td>
+												  <td>
+													<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#deleteModal">
+													<i class="icon-trash"></i>
+													</button>
+												  </td>
+												</tr>
+											  </tbody>
+											</table>
+											Suma wydatków: 200,00zł
+											
+										</div>
+										
+										<div class="col-12 col-lg-6 offset-lg-0 text-center mb-5 mt-lg-3 mr-0 bg-white">
+											
+											
+											<h1 class="h3">Przegląd przychodów</h1>
+											
+											<table class="table table-bordered">
+											  <thead>
+												<tr>
+												  <th>#</th>
+												  <th>Data</th>
+												  <th>Wydatek</th>
+												  <th>Kwota</th>
+												  <th>Opis</th>
+												  <th>#</th>
+												</tr>
+											  </thead>
+											  <tbody>
+												<tr>
+												  <th scope="row">1</th>
+												  <td>24-11</td>
+												  <td>Sprzedaż na Allegro</td>
+												  <td>600,00</td>
+												  <td>Sprzedaż akwarium</td>
+												  <td>
+													<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#deleteModal">
+													<i class="icon-trash"></i>
+													</button>
+												  </td>
+												</tr>
+												<tr>
+												  <th scope="row">2</th>
+												  <td>01-12</td>
+												  <td>Wypłata</td>
+												  <td>5000,00</td>
+												  <td></td>
+												  <td>
+													<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#deleteModal">
+													<i class="icon-trash"></i>
+													</button>
+												  </td>
+												</tr>
+												<tr>
+												  <th scope="row">3</th>
+												  <td>03-01</td>
+												  <td>Odsetki bankowe</td>
+												  <td>190,00</td>
+												  <td>Santander Bank</td>
+												  <td>
+													<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#deleteModal">
+													<i class="icon-trash"></i>
+													</button>
+												  </td>
+												</tr>
+											  </tbody>
+											</table>
+											Suma przychodów: 1200,00zł
+										
+												
+											
+												
+											
+										</div>
+										
+											
+								
+									</div>
+									
+									<h2 class="h3">Bilans wybranego okresu: + 300zł</h2>
+						
+								</div>
+								
+								
+								
+								
 							</div>
-							
-							
-						 
+
 						</div>
 						
-						<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteLabel" aria-hidden="true">
+						
+						<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-label="deleteLabel" aria-hidden="true">
 							<div class="modal-dialog" role="document">
 								<div class="modal-content">
 									<div class="modal-body">
 									Czy usunąć tę pozycję?
 									</div>
-								<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Tak</button>
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Nie</button>
+														
+									<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Tak</button>
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Nie</button>
+									</div>
 								</div>
-							</div>
+							</div>		
 						</div>
 						
-						
-						
-						</div>
 						
 						
 					</div>
