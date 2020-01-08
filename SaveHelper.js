@@ -43,3 +43,7 @@ function revealEmail(nr)
 	}	
 }
 
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+

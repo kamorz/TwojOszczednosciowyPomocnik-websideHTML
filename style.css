@@ -82,4 +82,8 @@ button:hover
 	display:none;
 }
 
+.tab-content
+{
+	font-size: 10px;
+}
 
